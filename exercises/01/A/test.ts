@@ -15,6 +15,8 @@ describe('Day 01 - A', () => {
     { input: [1, 2, 3, 4, 5], output: 4 },
     { input: [5, 4, 3, 2, 1], output: 0 },
     { input: [1], output: 0 },
+    { input: [1, 2], output: 1 },
+    { input: [1, 2, 3], output: 2 },
     { input: [1, 3, 2, 4], output: 2 },
   ].forEach((test) => {
     it(`${test.input} => ${test.output}`, () => {
@@ -29,7 +31,7 @@ describe('Day 01 - A', () => {
     { input: './input.txt', output: 1226 },
   ].forEach((test) => {
     it(`${test.input} => ${test.output}`, () => {
-      expect(problem.execFromFile(path.join(__dirname, test.input))).toBe(test.output);
+      expect(problem.execFromFile(path.join(__dirname, '..', test.input))).toBe(test.output);
     });
   });
 });

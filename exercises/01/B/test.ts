@@ -31,7 +31,7 @@ describe.only('Day 01 - B', () => {
     { input: './input.txt', output: 1252 },
   ].forEach((test) => {
     it(`${test.input} => ${test.output}`, () => {
-      expect(problem.execFromFile(path.join(__dirname, test.input))).toBe(test.output);
+      expect(problem.execFromFile(path.join(__dirname, '..', test.input))).toBe(test.output);
     });
   });
 });

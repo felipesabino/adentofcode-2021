@@ -2,7 +2,7 @@ import { Problem } from './';
 
 import * as path from 'path';
 
-describe('1 - removeKFromList', () => {
+describe('Day 01 - A', () => {
 
   let problem: Problem = null;
 
@@ -11,6 +11,7 @@ describe('1 - removeKFromList', () => {
   });
 
   [
+    { input: [199, 200, 208, 210, 200, 207, 240, 269, 260, 263], output: 7},
     { input: [1, 2, 3, 4, 5], output: 4 },
     { input: [5, 4, 3, 2, 1], output: 0 },
     { input: [1], output: 0 },
@@ -24,6 +25,7 @@ describe('1 - removeKFromList', () => {
   [
     { input: './test01.txt', output: 4 },
     { input: './test02.txt', output: 2 },
+    { input: './test03.txt', output: 7 },
     { input: './input.txt', output: 1226 },
   ].forEach((test) => {
     it(`${test.input} => ${test.output}`, () => {
